@@ -1,0 +1,113 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #cb8ccd;
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    z-index: 1;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    color: white;
+    font-family: "Pacifico", Serif;
+    font-size: 18px;
+}
+
+/* Main content */
+main {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+/* Formulário de adição de post */
+.add-post-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.add-post-title, 
+.add-post-body {
+    margin: 15px;
+    width: calc(100% - 30px);
+}
+
+.add-post-button {
+    margin: 15px;
+    width: 100px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Posts do blog */
+.blog-post-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.blog-post-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.blog-post-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blog-post-body {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer-container {
+    background: #cb8ccd;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title {
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .blog-post-container {
+        margin: 20px 15px;
+    }
+    
+    .add-post-container {
+        margin: 0 15px 30px;
+    }
+}

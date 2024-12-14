@@ -1,0 +1,45 @@
+/* Estilos gerais do blog */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos do cabeçalho */
+.header-container {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilos do corpo do blog */
+.blog-post-container {
+    background: white;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.blog-post-body {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Estilos do rodapé */
+.footer-container {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
