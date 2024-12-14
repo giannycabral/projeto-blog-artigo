@@ -1,14 +1,3 @@
-
-### Plano
-1. Atualizar descrição do projeto
-2. Incluir nova estrutura de arquivos
-3. Adicionar informações sobre a API
-4. Atualizar instruções de instalação
-5. Incluir funcionalidades implementadas
-
-```markdown
-
-
 # Blog Javascript com API
 
 Este é um projeto de blog desenvolvido com HTML, CSS, JavaScript e integração com API REST. O projeto demonstra a criação de um blog simples com operações CRUD (Create, Read, Delete).
