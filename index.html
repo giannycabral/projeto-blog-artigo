@@ -13,78 +13,43 @@
 </head>
 
 <body>
+  
   <header class="header-container container-fluid">
-    <span class="header-title"> Blog da Rêh : Mundo Tech🌐</span>
-  </header>
+    <span class="header-title">Blog da Rêh : InfoTech🌐</span>
+</header>
 
-  <main class="container conteudo">
-    <h1 class="text-center mt-4 blog-title-header">Adicionar Post</h1>
+<main class="container conteudo">
+    <!-- Seção de Adicionar Post -->
+    <h1 class="text-center mt-4 blog-title-header">Tecnologia&Inovação</h1>
     <hr class="blog-title-separator" />
     <div class="add-post-container">
-      <form id="add-post-form">
-        <input class="form-control add-post-title" type="text" name="title" placeholder="Titulo" />
-        <textarea class="form-control add-post-body" name="body" placeholder="Corpo"></textarea>
-        <input class="form-control add-post-title" type="text" name="image" placeholder="URL da Imagem" />
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary add-post-button text-center">
-              Criar
-            </button>
-        </div>
-      </form>
+        <form id="add-post-form">
+            <input class="form-control add-post-title" type="text" name="title" placeholder="Titulo" required />
+            <textarea class="form-control add-post-body" name="body" placeholder="Corpo" required></textarea>
+            <input class="form-control add-post-title" type="text" name="image" placeholder="URL da Imagem" />
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary add-post-button text-center">
+                    Criar
+                </button>
+            </div>
+        </form>
     </div>
 
-    <h1 class="text-center mt-4 blog-title-header">Posts</h1>
+    <!-- Seção de Posts -->
+    <h1 class="text-center mt-4 blog-title-header">Veja seus Posts</h1>
     <hr class="blog-title-separator" />
-    <section class="blog-container">
+    <div class="blog-posts-section">
+        <!-- Posts serão inseridos aqui via JavaScript -->
+    </div>
+</main>
 
-      <article class="blog-post-container" data-post-id="2">
-        <div class="row">
-          <div class="blog-post-image col-3">
-            <img src="https://img.freepik.com/vetores-gratis/astronauta-de-pe-na-ilustracao-dos-desenhos-animados-do-planeta-conceito-de-tecnologia-da-ciencia-isolado-estilo-flat-cartoon_138676-3429.jpg"></img>
-          </div>
-          <div class="col-7">
-            <div class="blog-post-title">Título do post 2</div>
-            <div class="blog-post-body"> Esse é um teste de texto do blog.</div>
-          </div>
-          <div class="col-2 d-flex align-items-center">
-            <a style="color:white" class="btn btn-danger m-auto" onclick="DeletarPost(this)">X</a>
-          </div>
-        </div>
-      </article>
+<footer class="footer-container container-fluid">
+    <span class="footer-title">Copyright ® Regiane Cabral</span>
+</footer>
 
-     <article class="blog-post-container" data-post-id="1">
-        <div class="row">
-          <div class="blog-post-image col-3">
-            <img src="https://img.freepik.com/vetores-gratis/astronauta-fofo-atirando-alienigena-com-arma-espacial-cartoon-vetor-icone-ilustracao-tecnologia-cientifica_138676-9515.jpg"></img>
-          </div>
-          <div class="col-7">
-            <div class="blog-post-title">🌐 Cibersegurança: A Proteção do Futuro Digital 🛡️</div>
-            <div class="blog-post-body"> A cibersegurança é uma disciplina vital no mundo digital contemporâneo, garantindo que informações sensíveis estejam protegidas contra ameaças virtuais. Com a crescente dependência da internet para transações financeiras, armazenamento de dados pessoais e comunicação, a cibersegurança não é apenas uma preocupação técnica, mas uma necessidade urgente. Ela envolve a implementação de tecnologias avançadas e práticas seguras para prevenir acessos não autorizados, proteger a integridade dos dados e garantir a confidencialidade das informações. Além disso, a cibersegurança é crucial para proteger infraestruturas críticas de ataques cibernéticos que podem causar impactos severos na economia e na sociedade. Em resumo, investir em cibersegurança é essencial para preservar a confiança digital e assegurar um futuro tecnológico seguro para todos.</div>
-          </div>
-          <div class="col-2 d-flex align-items-center">
-            <a style="color:white" class="btn btn-danger m-auto" onclick="DeletarPost(this)">X</a>
-          </div>
-        </div>
-      </article>
-    
-    </section>
-
-  </main>
-
-  <footer class="footer-container container-fluid">
-    <span class="footer-title"> Copyright ® Regiane Cabral</span>
-  </footer>
-
-  <!-- Substitua o bloco de script existente por: -->
 <script src="/meu-blog/js/api.js"></script>
 <script src="/meu-blog/js/blog.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        carregarPosts();
-    });
-</script>
-</body>
-</html>
+
 </body>
 
 </html>

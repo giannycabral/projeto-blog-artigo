@@ -3,7 +3,7 @@ function criarElementoPost(post) {
     <article class="blog-post-container" data-post-id="${post.id}">
         <div class="row">
             <div class="blog-post-image col-3">
-                <img src="https://via.placeholder.com/150" alt="Post image">
+                <img src="${post.image}" alt="Imagem do post">
             </div>
             <div class="col-7">
                 <div class="blog-post-title">${post.title}</div>
@@ -19,6 +19,7 @@ function criarElementoPost(post) {
 async function carregarPosts() {
     const posts = await getPosts();
     const container = document.querySelector('.blog-posts-section');
+    container.innerHTML = ''; // Limpa posts existentes
     posts.forEach(post => {
         container.insertAdjacentHTML('beforeend', criarElementoPost(post));
     });
@@ -29,4 +30,29 @@ async function DeletarPost(elemento) {
     const postId = post.dataset.postId;
     await deletePost(postId);
     post.remove();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('add-post-form');
+    form.addEventListener('submit', handleSubmit);
+    carregarPosts();
+});
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const novoPost = {
+        title: formData.get('title'),
+        body: formData.get('body'),
+        image: formData.get('image') || 'https://via.placeholder.com/150'
+    };
+
+    try {
+        const postCriado = await createPost(novoPost);
+        const container = document.querySelector('.blog-posts-section');
+        container.insertAdjacentHTML('afterbegin', criarElementoPost(postCriado));
+        event.target.reset();
+    } catch (error) {
+        console.error('Erro ao criar post:', error);
+    }
 }
