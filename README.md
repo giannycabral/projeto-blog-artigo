@@ -60,6 +60,14 @@ O projeto utiliza a API JSONPlaceholder para demonstração. Endpoints utilizado
 - POST /posts: Cria novo post
 - DELETE /posts/{id}: Remove um post específico
 
+## Video do Projeto
+
+<video width="320" height="240" controls>
+  <source src="/src/videoplayback.mp4" type="video/mp4">
+  Seu navegador não suporta o elemento de vídeo.
+</video>
+
+
 ## Desenvolvido por
 
 Regiane Cabral
