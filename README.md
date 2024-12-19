@@ -1,3 +1,5 @@
+![project](https://github.com/user-attachments/assets/db9a9373-1b18-4b71-a11f-eefac44fbf98)
+
 # Blog Javascript com API
 
 Este é um projeto de blog desenvolvido com HTML, CSS, JavaScript e integração com API REST. O projeto demonstra a criação de um blog simples com operações CRUD (Create, Read, Delete).
